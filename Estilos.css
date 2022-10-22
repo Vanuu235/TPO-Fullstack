@@ -1,14 +1,17 @@
 * {
     font-family: 'Philosopher', sans-serif;
+    background-color: #FAF7F0;
 }
 
 .nav {
+    color:#FAF7F0;
+    background: #98A8F8;
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(gainsboro , lightblue);
+    
 }
 
 h1 {
@@ -22,6 +25,7 @@ h1 {
 
 .footer {
     color:cornflowerblue;
+    background-color: #CDFCF6;
     display: flex;
     justify-content: center;
     align-items: center;
