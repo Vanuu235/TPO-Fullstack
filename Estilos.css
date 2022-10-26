@@ -42,3 +42,47 @@ h1 {
 #espacio {
     height: 30px;
 }
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+    border: 3px solid rgb(95, 64, 120);
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 3px 7px 13px 2px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 3px 7px 13px 2px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 3px 7px 13px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .inputs-form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    background-color: rgba(206, 201, 201, 0.4);
+    border-radius: 5ex;
+    width: 30ex;
+    
+  }
+
+  .button-form {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 70px;
+    height: 30px;
+    border: 1px solid rgb(38, 5, 101);
+    border-radius: 10px;
+    background-color: #98A8F8;
+    color: rgb(23, 23, 23);
+    cursor: pointer;
+    
+  }
