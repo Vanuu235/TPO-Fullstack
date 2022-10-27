@@ -43,6 +43,52 @@ h1 {
     height: 30px;
 }
 
+#cartel {
+ 
+    position: relative;
+    width: 200px;
+    height: 140px;
+    font-size: 40px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    background-color: #767c96;
+    margin-left: 30%;
+    animation-name: example;
+    animation-duration: 8s;
+    left: 200px;
+}
+
+@keyframes example {
+    0% {
+        background-color: #4659b8;
+        left: 0px;
+        top: 0px;
+        border-radius: 0%;
+    }
+ 
+    50% {
+        background-color: salmon;
+        left: 300px;
+        top: 0px;
+        border-radius: 50%;
+    }
+ 
+ 
+    100% {
+        background-color: cadetblue;
+        left: 0px;
+        top: 0px;
+        border-radius: 0%;
+    }
+}
+
+#tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
 .create-form {
     display: flex;
     flex-direction: column;
@@ -86,3 +132,5 @@ h1 {
     cursor: pointer;
     
   }
+
+ 
