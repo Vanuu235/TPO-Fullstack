@@ -21,7 +21,7 @@
     <h1> Contáctanos </h1>
     <h2>Ingresá tus datos para contactarnos</h2>
     <div class="create-form">
-    <form >
+    <form  action="" name="formulario" method="get">
         
         <label>Nombre: </label>
         <input
@@ -52,16 +52,52 @@
         <br>
         <br>
         <label>Mensaje: </label>
-        <input 
+        <textarea 
          class="inputs-form"
-         type= "text" 
          name= "mensaje"
-         placeholder="Ingrese su mensaje"
-         />
+         > </textarea>
          <br>
          <br>
-        <button class="button-form">Enviar</button>
+        <input  class="button-form" type="submit" id="b1" name="btn" value="Enviar">
     </form>
+    <script >
+
+        var formulario = document.getElementsByName('formulario')[0],
+            elementos = formulario.elements,
+            boton = document.getElementById('b1')
+
+        var validarNombre = function(e){
+            if (formulario.name.value == 0){
+                alert("El campo nombre debe estar completo");
+                e.preventDefault();
+            }
+        }
+
+        var validarTelefono = function(e){
+            if (formulario.telefono.value == 0){
+                alert("El campo telefono debe estar completo");
+                e.preventDefault();
+            }
+        }
+
+        var validarEmail = function(e){
+            if (formulario.email.value == 0){
+                alert("El campo email debe estar completo");
+                e.preventDefault();
+            }
+        }
+
+
+        var validar = function (e){
+            validarNombre(e);
+            validarEmail(e);
+            validarTelefono(e);
+
+        }
+
+        formulario.addEventListener("submit", validar);
+
+    </script>
 </div>
 </body>
 
